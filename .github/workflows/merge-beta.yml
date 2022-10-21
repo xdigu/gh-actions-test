@@ -1,5 +1,5 @@
 name: Generate beta on pull request
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: ${{ github.actor }} is testing out beta on pull request 🚀
 on:
    pull_request:
     branches:
