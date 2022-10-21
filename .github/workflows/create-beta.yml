@@ -1,12 +1,10 @@
-name: Generate beta on pull request
-run-name: ${{ github.actor }} is testing out beta on pull request 🚀
+name: Generate beta on release or hotfix
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
-   pull_request:
+  push:
     branches:
       - "hotfix/**"
       - "release/**"
-    types:
-      - closed
 jobs:
   build-beta:
     runs-on: ubuntu-latest
