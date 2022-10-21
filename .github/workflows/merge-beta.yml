@@ -4,7 +4,7 @@ on:
    pull_request:
     branches:
       - "hotfix/**"
-      - "releases/**"
+      - "release/**"
     types:
       - closed
 jobs:

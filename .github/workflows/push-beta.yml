@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - "hotfix/**"
-      - "releases/**"
+      - "release/**"
 jobs:
   build-beta:
     runs-on: ubuntu-latest
