@@ -6,6 +6,7 @@ on:
       - main
 jobs:
   build-beta:
+    if: ${{ github.head_ref === release/** || github.head_ref === hotfix/** }}
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
